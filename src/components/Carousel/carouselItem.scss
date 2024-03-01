@@ -1,0 +1,106 @@
+
+.carousel{
+    overflow: hidden;
+    max-width: 80vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inner{
+    white-space: nowrap;
+    transition: transform 0.3s;
+    // box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.carousel-item{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 80vw;
+    background-color: #fff;
+}
+
+@media only screen and (max-width: 700px){
+    .carousel-item{
+        flex-direction: column;
+    }
+
+    .carousel{
+        // height: 50vh;
+    }
+}
+
+.carousel-img{
+    max-width: 1000px;
+    padding: 0 20px 0 20px;
+}
+
+@media only screen and (max-width: 1457px){
+    .carousel-img{
+        max-width: 500px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .carousel-img{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .carousel-img{
+        max-width: 300px;
+    }
+}
+
+.carousel-item-text{
+    font-size: 1.2rem;
+    margin: 40px 0 40px 0;
+    padding: 0 20px 20px;
+    white-space: normal;
+    color: #617d98;
+}
+
+
+.carousel-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-arrow{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.indicators{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.indicator-buttons{
+    border: none;
+    cursor: pointer;
+}
+
+.indicators > button {
+    margin: 5px;
+    background: none;
+}
+
+.indicator-symbol{
+    color: #26343f;
+}
+
+.indicator-symbol-active{
+    color: #FEBE10;
+}
